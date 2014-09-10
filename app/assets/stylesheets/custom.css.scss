@@ -1,13 +1,21 @@
 #logo {
-  float: left;
   font-size: 1.7em;
-  color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
-  line-height: 2;
   &:hover {
-    color: #fff;
     text-decoration: none;
   }
+}
+
+#firstName{
+  color: royalblue;
+}
+
+#lastName{
+  color: gold;
+}
+
+#footerTitle{
+  line-height: 3;
 }
