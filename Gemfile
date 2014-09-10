@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.1.2"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -28,7 +29,7 @@ gem 'spring',        group: :development
 
 gem 'rspec-rails', '~> 3.0.2', :group => [:development, :test]
 
-
+gem 'bootstrap-sass', '~> 3.2.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
