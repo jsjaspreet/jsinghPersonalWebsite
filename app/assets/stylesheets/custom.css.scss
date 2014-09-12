@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Vollkron";
+  src: url(/assets/fonts/Vollkorn-Regular.ttf);
+}
+
+.vollkron{
+  font-family: "Vollkron";
+}
+
+#profilePic{
+  padding-bottom: 10px;
+}
+p{
+  font-size: 24px;
+  line-height: 40px;
+  text-align: justify;
+}
 #logo {
   font-size: 1.7em;
   text-transform: uppercase;
@@ -20,3 +37,6 @@
   line-height: 3;
 }
 
+#footer{
+  height: 60px;
+}
