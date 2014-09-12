@@ -40,3 +40,14 @@ p{
 #footer{
   height: 60px;
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+{
+  p{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+  }
+}
