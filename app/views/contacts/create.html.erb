@@ -1,8 +1,38 @@
-<div>
-  <% flash.each do |key, value| %>
-      <div>
-        <a href="#" data-dismiss="alert">×</a>
-        <%= value %>
-      </div>
+<div class="container text-center">
+  <% flash.each do |name, msg| %>
+      <% if msg.is_a?(String) %>
+          <div class="alert alert-<%= name.to_s == 'notice' ? 'success' : 'danger' %>">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <%= content_tag :div, msg, :id => "flash_#{name}" %>
+          </div>
+      <% end %>
   <% end %>
+</div>
+<div class="jumbotron container">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h2 class="vollkron">Social Media</h2>
+      <div class="row">
+        <div class="col-sm-4"> <a href="https://www.facebook.com/js.jaspreetsingh" target="_blank"><%= image_tag '/social-icons/facebook.png'  %></a></div>
+        <div class="col-sm-4"> <a href="https://twitter.com/jaspreet_js" target="_blank"><%= image_tag '/social-icons/twitter.png' %></a></div>
+        <div class="col-sm-4"> <a href="https://www.linkedin.com/pub/jaspreet-singh/39/a63/437" target="_blank"><%= image_tag '/social-icons/linkedin.png' %></a></div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <h2 class="vollkron text-center"><a href="mailto:jsjaspreet@berkeley.edu" target="_top">jsjaspreet@berkeley.edu</a></h2>
+      <%= simple_form_for @contact, html: { class: 'form-group' } do |f| %>
+          <%= f.input :name, label: 'Name', input_html: { class: 'form-control' }, :required => true %>
+          <%= f.input :email, label: 'Email', input_html: { class: 'form-control' }, :required => true %>
+          <%= f.input :message,label: 'Message', input_html: { rows: 10, class: 'form-control' }, :as => :text, :required => true %>
+          <div class= "hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div class="text-center">
+            </br>
+            <%= f.button :submit, 'Send message', :class=> "btn btn-lg btn-primary" %>
+          </div>
+      <% end %>
+    </div>
+  </div>
 </div>
