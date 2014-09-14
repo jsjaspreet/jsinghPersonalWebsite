@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'root_pages#home'
   match '/about',     to: 'root_pages#about', via: 'get'
+  match '/resume',    to: 'root_pages#resume', via: 'get'
   match '/blog',      to: 'root_pages#blog',  via: 'get'
   match '/contact',   to: 'root_pages#contact', via: 'get'
 

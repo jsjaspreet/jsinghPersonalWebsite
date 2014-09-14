@@ -1,6 +1,28 @@
+body {
+  background: url(/images/home-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @font-face {
   font-family: "Vollkron";
   src: url(/assets/fonts/Vollkorn-Regular.ttf);
+}
+
+.jumbotron{
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  /* IE 5-7 */
+  filter: alpha(opacity=90);
+  /* Netscape */
+  -moz-opacity: 0.9;
+  /* Safari 1.x */
+  -khtml-opacity: 0.9;
+  /* Good browsers */
+  opacity: 0.9;
+  background-color: aliceblue;
 }
 
 .vollkron{
@@ -15,6 +37,9 @@ p{
   line-height: 40px;
   text-align: justify;
 }
+
+
+//header stuff
 #logo {
   font-size: 1.7em;
   text-transform: uppercase;
@@ -33,14 +58,20 @@ p{
   color: gold;
 }
 
+//footer stuff
 #footerTitle{
   line-height: 3;
+  color: whitesmoke;
 }
 
 #footer{
-  height: 60px;
+  width: 100%;
+  position:absolute;
+  bottom: 0;
+  left: 0;
 }
 
+//mobile Handling
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px)
