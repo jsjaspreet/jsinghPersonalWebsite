@@ -12,5 +12,5 @@ class Contact < MailForm::Base
         :to => "jsjaspreet@berkeley.edu",
         :from => %("#{name}" <#{email}>)
     }
-  endm
+  end
 end
