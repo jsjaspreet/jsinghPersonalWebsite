@@ -13,8 +13,87 @@ body {
   src: asset-url('/assets/fonts/Vollkorn-Regular.ttf');
 }
 
-//.hidden { display: none; }
+#headerNav{
+  font-size: 16px;
+}
 
+//resume page
+
+#resumeNav{
+  a:link{
+    color: yellow;
+  }
+  /* visited link */
+  a:visited {
+    color: yellow;
+  }
+
+  /* mouse over link */
+  a:hover {
+    text-decoration: none;
+  }
+
+  /* selected link */
+  a:active {
+    color: yellow;
+  }
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  /* IE 5-7 */
+  filter: alpha(opacity=80);
+  /* Netscape */
+  -moz-opacity: 0.8;
+  /* Safari 1.x */
+  -khtml-opacity: 0.8;
+  /* Good browsers */
+  opacity: 0.8;
+  font-size: 22px;
+  background-color: black;
+  color: yellow;
+}
+
+.resContent{
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* IE 5-7 */
+  filter: alpha(opacity=100);
+  /* Netscape */
+  -moz-opacity: 1;
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Good browsers */
+  opacity: 1;
+  color: black;
+}
+.blue{
+  background-color: rgba(30,144,220,0.4);
+}
+
+.yellow{
+  background-color: rgba(255,215,0,.4)
+}
+
+.introButtons{
+  font-size: 23px;
+  letter-spacing: 2px;
+//  font-weight: bold;
+}
+div .resEl{
+  margin: 2 2 2 2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  /* IE 5-7 */
+  filter: alpha(opacity=80);
+  /* Netscape */
+  -moz-opacity: 0.8;
+  /* Safari 1.x */
+  -khtml-opacity: 0.8;
+  /* Good browsers */
+  opacity: 0.8;
+}
 
 .socialButton{
   padding-left: 20px;
@@ -50,7 +129,7 @@ p{
 
 //header stuff
 #logo {
-  font-size: 1.7em;
+  font-size: 1.9em;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
