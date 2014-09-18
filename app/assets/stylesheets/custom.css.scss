@@ -17,6 +17,8 @@ body {
   font-size: 16px;
 }
 
+
+
 //resume page
 
 #resumeNav{
@@ -28,10 +30,10 @@ body {
     color: yellow;
   }
 
-  .wowOptions{
+.wowOptions{
     data-wow-duration: "1s";
     data-wow-offset: 20px;
-  }
+}
 
   /* mouse over link */
   a:hover {
@@ -169,6 +171,10 @@ p{
 and (min-device-width : 320px)
 and (max-device-width : 480px)
 {
+  .mobileHide{
+    display:none;
+  }
+  
   body{
     background-size: 100% 100%;
     background: none;
