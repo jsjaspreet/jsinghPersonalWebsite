@@ -1,8 +1,8 @@
 
 
-      <ol class="breadcrumb text-center vollkron" id="resumeNav">
+      <ol class="breadcrumb text-center vollkron desktopShow" id="resumeNav">
         <li><%= link_to "PDF Version", '/resume/JaspreetSinghResume.pdf', id: "PDF Version" %></li>
-        <li class="mobileHide"><%= link_to "Timeline Highlights", '#intro', id: "IntroBC", class:"mobileHide" %></li>
+        <li><%= link_to "Timeline Highlights", '#intro', id: "IntroBC" %></li>
         <li><%= link_to "Skills", '#skills', id: "SkillsBC" %></li>
         <li><%= link_to "Education", '#education', id: "EducationBC" %></li>
         <li><%= link_to "Experience", '#experience', id: "ExperienceBC" %></li>
@@ -10,6 +10,15 @@
         <li><%= link_to "Hobbies", '#hobbies', id: "HobbiesBC" %></li>
       </ol>
 
+
+      <ol class="breadcrumb text-center vollkron mobileShow" id="resumeNav">
+        <li><%= link_to "PDF Version", '/resume/JaspreetSinghResume.pdf', id: "PDF Version" %></li>
+        <li><%= link_to "Skills", '#skills', id: "SkillsBC" %></li>
+        <li><%= link_to "Education", '#education', id: "EducationBC" %></li>
+        <li><%= link_to "Experience", '#experience', id: "ExperienceBC" %></li>
+        <li><%= link_to "Projects", '#projects', id: "ProjectsBC" %></li>
+        <li><%= link_to "Hobbies", '#hobbies', id: "HobbiesBC" %></li>
+      </ol>
 
    <div class="row blue wow fadeInLeft mobileHide">
      <div class="col-md-12">

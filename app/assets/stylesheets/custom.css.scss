@@ -119,7 +119,9 @@ div .resEl{
   opacity: 0.9;
   background-color: aliceblue;
 }
-
+.mobileShow{
+  display: none;
+}
 .vollkron{
   font-family: "Vollkron";
 }
@@ -171,7 +173,11 @@ p{
 and (min-device-width : 320px)
 and (max-device-width : 480px)
 {
-  .mobileHide{
+  .mobileShow{
+    display:inline;
+  }
+
+  .desktopShow{
     display:none;
   }
 
