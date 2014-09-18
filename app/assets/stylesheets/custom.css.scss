@@ -21,20 +21,14 @@ body {
 
 //resume page
 
-#resumeNav{
-  a:link{
+#resumeNav {
+  a:link {
     color: yellow;
   }
   /* visited link */
   a:visited {
     color: yellow;
   }
-
-.wowOptions{
-    data-wow-duration: "1s";
-    data-wow-offset: 20px;
-}
-
   /* mouse over link */
   a:hover {
     text-decoration: none;
@@ -57,6 +51,11 @@ body {
   font-size: 22px;
   background-color: black;
   color: yellow;
+}
+
+.wowOptions{
+  data-wow-duration: "1s";
+  data-wow-offset: 15px;
 }
 
 .resContent{
@@ -175,6 +174,10 @@ and (max-device-width : 480px)
 {
   .mobileShow{
     display:inline;
+  }
+
+  #resumeNav {
+    font-size: 15px;
   }
 
   .desktopShow{
