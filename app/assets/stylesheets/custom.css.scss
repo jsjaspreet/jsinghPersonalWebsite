@@ -28,6 +28,11 @@ body {
     color: yellow;
   }
 
+  .wowOptions{
+    data-wow-duration: "1s";
+    data-wow-offset: 20px;
+  }
+
   /* mouse over link */
   a:hover {
     text-decoration: none;
