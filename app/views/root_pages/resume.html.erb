@@ -1,16 +1,17 @@
-
-      <ol class="breadcrumb text-center vollkron desktopShow" id="resumeNav">
+    <div class="container">
+      <ol class="nav nav-tabs nav-justified text-center vollkron desktopShow" id="resumeNav">
         <li><%= link_to "PDF Version", '/resume/JaspreetSinghResume.pdf', id: "PDF Version" %></li>
-        <li><%= link_to "Timeline Highlights", '#intro', id: "IntroBC" %></li>
+        <li><%= link_to "Timeline", '#intro', id: "IntroBC" %></li>
         <li><%= link_to "Skills", '#skills', id: "SkillsBC" %></li>
         <li><%= link_to "Education", '#education', id: "EducationBC" %></li>
         <li><%= link_to "Experience", '#experience', id: "ExperienceBC" %></li>
         <li><%= link_to "Projects", '#projects', id: "ProjectsBC" %></li>
         <li><%= link_to "Hobbies", '#hobbies', id: "HobbiesBC" %></li>
       </ol>
+    </div>
 
-
-      <ol class="breadcrumb text-center vollkron mobileShow" id="resumeNav">
+    <div class="container">
+      <ol class="nav nav-tabs nav-justified text-center vollkron mobileShow" id="resumeNav">
         <li><%= link_to "PDF Version", '/resume/JaspreetSinghResume.pdf', id: "PDF Version" %></li>
         <li><%= link_to "Skills", '#skills', id: "SkillsBC" %></li>
         <li><%= link_to "Education", '#education', id: "EducationBC" %></li>
@@ -18,7 +19,7 @@
         <li><%= link_to "Projects", '#projects', id: "ProjectsBC" %></li>
         <li><%= link_to "Hobbies", '#hobbies', id: "HobbiesBC" %></li>
       </ol>
-
+    </div>
    <div class="row blue wow fadeInLeft desktopShow">
      <div class="col-md-12">
           <div class="resEl" id="intro">
@@ -31,12 +32,65 @@
 
    <div class="row yellow wow fadeInRight wowOptions" >
      <div class="col-md-12">
-        <div class="resEl" id="skills">
+        <div class="resEl text-center" id="skills">
             <div class="container resContent">
-              <p>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus enim mauris, id venenatis elit placerat sed. Curabitur sed facilisis purus, sed consequat mauris. In sit amet orci vel arcu euismod lacinia. Suspendisse turpis dui, scelerisque nec molestie in, fringilla sed tortor. Nulla arcu velit, dictum nec viverra id, vulputate in nulla. Cras laoreet in lectus non sagittis. Mauris ullamcorper lorem et quam luctus lobortis. Sed nec gravida est, et porttitor arcu. Nam bibendum sagittis elementum. Sed sed risus sed purus semper blandit. Phasellus vestibulum bibendum ipsum, id elementum mi rutrum vitae.
-            </p>
+              <h1 class="vollkron">Skills</h1>
+              <div class="skillbar clearfix " data-percent="75%">
+                <div class="skillbar-title" style="background: #d35400;"><span>Java</span></div>
+                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                <div class="skill-bar-percent">75%</div>
+              </div> <!-- End Skill Bar -->
+              <div class="skillbar clearfix " data-percent="60%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>Ruby/Rails</span></div>
+                <div class="skillbar-bar" style="background: #3498db;"></div>
+                <div class="skill-bar-percent">60%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="85%">
+                <div class="skillbar-title" style="background: goldenrod;"><span>HTML</span></div>
+                <div class="skillbar-bar" style="background: gold;"></div>
+                <div class="skill-bar-percent">85%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="85%">
+                <div class="skillbar-title" style="background: #46465e;"><span>CSS</span></div>
+                <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                <div class="skill-bar-percent">85%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: darkred;"><span>Linux</span></div>
+                <div class="skillbar-bar" style="background: crimson;"></div>
+                <div class="skill-bar-percent">50%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="45%">
+                <div class="skillbar-title" style="background: darkkhaki;"><span>Python</span></div>
+                <div class="skillbar-bar" style="background: khaki;"></div>
+                <div class="skill-bar-percent">45%</div>
+              </div> <!-- End Skill Bar -->
+
+
+              <div class="skillbar clearfix " data-percent="35%">
+                <div class="skillbar-title" style="background: purple;"><span>Javascript</span></div>
+                <div class="skillbar-bar" style="background: mediumpurple;"></div>
+                <div class="skill-bar-percent">35%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="30%">
+                <div class="skillbar-title" style="background: #27ae60;"><span>Hadoop</span></div>
+                <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                <div class="skill-bar-percent">30%</div>
+              </div> <!-- End Skill Bar -->
+
+              <div class="skillbar clearfix " data-percent="25%">
+                <div class="skillbar-title" style="background: #124e8c;"><span>Android</span></div>
+                <div class="skillbar-bar" style="background: #4288d0;"></div>
+                <div class="skill-bar-percent">25%</div>
+              </div> <!-- End Skill Bar -->
             </div>
+
+
          </div>
      </div>
    </div>
@@ -46,22 +100,99 @@
      <div class="col-md-12">
         <div class="resEl" id="education">
           <div class="container  resContent">
-            <p>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus enim mauris, id venenatis elit placerat sed. Curabitur sed facilisis purus, sed consequat mauris. In sit amet orci vel arcu euismod lacinia. Suspendisse turpis dui, scelerisque nec molestie in, fringilla sed tortor. Nulla arcu velit, dictum nec viverra id, vulputate in nulla. Cras laoreet in lectus non sagittis. Mauris ullamcorper lorem et quam luctus lobortis. Sed nec gravida est, et porttitor arcu. Nam bibendum sagittis elementum. Sed sed risus sed purus semper blandit. Phasellus vestibulum bibendum ipsum, id elementum mi rutrum vitae.
-            </p>
+            <h1 class="vollkron text-center">Education</h1>
+            <div class="row">
+               <div class="col-sm-6">
+
+                    <h2 class="vollkron"><b>University of California, Berkeley</b></h2>
+                    <h3 class="vollkron">B.S. in Electrical Engineering and Computer Science</h3>
+                    <h4><span class="vollkron" style="text-decoration: underline"><b>Relevant Coursework</b></span></h4>
+                    <ul class="bullets vollkron">
+                          <li>CS 169: Software Engineering</li>
+                          <li>CS 170:  Efficient Algorithms and Intractable Problems</li>
+                          <li>CS 168: Networks</li>
+                          <li>CS 188: Artificial Intelligence</li>
+                          <li>CS 61B: Data Structures</li>
+                          <li>CS 61C: Great Ideas in Computer Architecture</li>
+                          <li>CS 61A: Structure and Interpretation of Computer Programs</li>
+                          <li>CS 70: Discrete Mathematics and Probability Theory</li>
+                    </ul>
+               </div>
+
+                <div class="col-sm-6">
+                  <%= image_tag '/images/ucbseal.png', alt: "UC Berkeley Seal", class: "img-responsive pull-right" %>
+                </div>
+            </div>
+          </div>
           </div>
         </div>
-     </div>
    </div>
+
 
 
    <div class="row yellow  wow fadeInRight wowOptions">
      <div class="col-md-12">
         <div class="resEl"  id="experience">
             <div class="container resContent">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus enim mauris, id venenatis elit placerat sed. Curabitur sed facilisis purus, sed consequat mauris. In sit amet orci vel arcu euismod lacinia. Suspendisse turpis dui, scelerisque nec molestie in, fringilla sed tortor. Nulla arcu velit, dictum nec viverra id, vulputate in nulla. Cras laoreet in lectus non sagittis. Mauris ullamcorper lorem et quam luctus lobortis. Sed nec gravida est, et porttitor arcu. Nam bibendum sagittis elementum. Sed sed risus sed purus semper blandit. Phasellus vestibulum bibendum ipsum, id elementum mi rutrum vitae.
-             </p>
+              <h1 class="vollkron text-center">Experience</h1>
+              <div class="row vollkron">
+                <div class="col-sm-9">
+                <h2 style="display: inline">YP</h2> <h4 style="display: inline; padding-left: 10px; ">(June - August 2014)</h4>
+                  <ul class="bullets vollkron">
+                    <li>
+                      Designed and implemented a local business search API in Java that ingested a wide range of data (from
+                      multiple APIs and a custom Google Search Engine) to provide updated business data to other YP applications.
+                      This application ended up performing better than a commercial product we were using for gathering data at the time.
+                    </li>
+                    <li>
+                      Incorporated Elasticsearch in the design of the application so business records could be retrieved and updated in an efficient manner
+                    </li>
+                    <li>
+                      Deployed the above application on Digital Ocean across multiple machines and leveraged Digital
+                      Ocean's API to create an administrative interaction layer for the app that provided load balancing and administration capabilities to the system
+                    </li>
+                    <li>
+                      Coded a custom map-reduce Hadoop job and corresponding shell script that efficiently transferred data stored in a
+                      Hive cluster to an Hbase cluster
+                    </li>
+                    <li>
+                      Participated and won an internal Hackathon where I helped develop an Android application (Tinder for Food)
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                    <%= image_tag '/images/YP-small-logo.png', alt: "YP Logo", class: "pull-right" %>
+                </div>
+              </div>
+
+              <div class="row vollkron" style="padding-top: 30px">
+                <div class="col-sm-9">
+                  <h2 style="display: inline">Practice Fusion</h2> <h4 style="display: inline; padding-left: 10px">(June - August 2012, June - July 2013)</h4>
+                  <ul class="bullets vollkron">
+                    <li>Assisted in on-boarding new employees by imaging laptops and providing training on IT policy</li>
+                    <li>Implemented an asset tracking system utilizing QR codes to assist in maintaining records of company assets</li>
+                    <li>Provided general desktop support for multiple operating systems including Windows 7 and Max OS</li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                      <%= image_tag '/images/PF-logo.png', alt: "PF Logo", class: "pull-right" %>
+                </div>
+              </div>
+
+
+              <div class="row vollkron" style="padding-top: 30px">
+                <div class="col-sm-9">
+                  <h2 style="display: inline">Academic Lab Assistant at UC Berkeley</h2> <h4 style="display: inline; padding-left: 10px">(August 2013 - May 2014)</h4>
+                  <ul class="bullets vollkron">
+                    <li>Facilitated discussion and learning in the lab portions of introductory CS courses at UC Berkeley</li>
+
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <%= image_tag '/images/ucbseal-small.png', alt: "UC Seal", class: "pull-right" %>
+                </div>
+              </div>
+
             </div>
         </div>
      </div>
@@ -95,6 +226,17 @@
         </div>
       </div>
 
+
+      <script>
+      jQuery(document).ready(function(){
+      jQuery('.skillbar').each(function(){
+      jQuery(this).find('.skillbar-bar').animate({
+      width:jQuery(this).attr('data-percent')
+      },6000);
+      });
+      });
+    </script>
+
 <script>
     $('a[href^="#"]').on('click', function(event) {
 
@@ -108,6 +250,7 @@
         }
 
     });
+
 </script>
       <script>
           new WOW().init();
