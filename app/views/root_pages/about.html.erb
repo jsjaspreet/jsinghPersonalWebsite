@@ -1,13 +1,16 @@
 <% provide(:title, 'About') %>
 <div class="container">
 <div class="jumbotron text-center">
-<%= image_tag '/images/gravatarProfile.jpeg', alt: 'Profile Picture', class: 'img-responsive center-block' %>
-<br>
+  <h1 class="vollkron text-center" id="aboutTitle">About Me</h1>
 
-<p class="vollkron">
-  Hi! I'm currently a senior at UC Berkeley studying Electrical Engineering and Computer Science.
-  This past summer, my software engineering internship at YP gave me what some might call a
-  builder's bug. From writing the first few lines of code of the application I worked on,
+
+          <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ajs5m8_rEeqIdHJzQU1SUlFlaUdta1U3djVUU20ya3c&start_zoom_adjust=1&font=BreeSerif-OpenSans&maptype=toner&lang=en&height=530' width='100%'  height='530' frameborder='0'></iframe>
+
+<p class="vollkron" id="aboutText">
+
+  I've always loved building things. This past summer, I got to build an interesting data application
+  as part of my software engineering internship with YP.
+  From writing the first few lines of code of the application I worked on,
   to deploying multiple machines running the application to DigitalOcean's cloud, to writing a
   custom load balancer using Digital Ocean's API that would make scaling and administrating
   the application much easier, I found myself fascinated with all the different moving parts of a
